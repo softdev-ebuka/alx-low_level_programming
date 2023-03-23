@@ -3,7 +3,7 @@
 /**
  * more_numbers - print 10x the numbers fron 0 to 14
  *
- * Return: 10x of the numbers 0 t0 14
+ * Return: 10x of the numbers since 0 up  t0 14
  */
 void more_numbers(void)
 {
@@ -11,14 +11,14 @@ void more_numbers(void)
 
 	for (x = 0 ; x < 10 ; x++)
 	{
-		for (y = 0 ; y <= 14 ; y++)
-		{
-			if (y > 9)
-			{
-				_putchar((y / 10) + '0');
-				_putchar((y % 10) + '0');
-			}
-		}
+	for (y = 0 ; y <= 14 ; y++)
+	{
+	if (y > 9)
+	{
+	_putchar((y / 10) + '0');
+	}
+	_putchar((y % 10) + '0');
 	}
 	_putchar('\n');
+	}
 }
