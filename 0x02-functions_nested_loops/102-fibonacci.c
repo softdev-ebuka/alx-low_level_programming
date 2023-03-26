@@ -8,20 +8,20 @@
 int main(void)
 {
 	int i = 0;
-	long int x = 0, y = 1, sum;
+	long int x = 0, y = 1, next;
 
 	while (i < 50)
 	{
-		sum = x + y;
+		next = x + y;
 		x = y;
-		b = sum;
-		printf("%lu", sum);
+		y = next;
+		printf("%lu", next);
 		if (i < 49)
 		{
 			printf(", ");
 		}
 		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
