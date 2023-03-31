@@ -20,8 +20,10 @@ char *rot13(char *s)
 		for (x = 0 ; x < 52 ; x++)
 		{
 			if (s[i] == data1[x])
+			{
 				s[i] = datarot[x];
-			break;
+				break;
+			}
 		}
 	}
 	return (s);
