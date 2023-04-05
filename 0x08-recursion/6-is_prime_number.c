@@ -11,7 +11,7 @@ int prime2(int x, int y)
 {
 	if (x == y)
 		return (1);
-	else if (x % b == 0)
+	else if (x % y == 0)
 		return (0);
 	return (prime2(x, y + 1));
 }
