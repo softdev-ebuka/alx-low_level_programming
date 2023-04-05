@@ -39,5 +39,5 @@ int is_palindrome(char *s)
 	int x;
 
 	x = palind1(s, 0);
-	return (palind3(s, 1));
+	return (palind2(s, 1));
 }
