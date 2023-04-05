@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * palind1 - returns lenght of a string
- * @c: string
+ * palind2 - returns lenght of a string
+ * @a: string
  * @x: integer to count the lenght
  *
  * Return: 1 on success
  */
-int palind1(char *c, int x)
+int palind2(char *a, int x)
 {
-	if (*c == 0)
+	if (*a == 0)
 		return (x - 1);
-	return (palind1(c + 1, x + 1));
+	return (palind2(a + 1, x + 1));
 }
 /**
- * palind2 - compares string versus string reverse
- * @c: string
+ * palind3 - compares string versus string reverse
+ * @a: string
  * @x: lenght
  *
  * Return: 1 on success
  */
-int palind2(char *c, int x)
+int palind3(char *a, int x)
 {
-	if (*c != *(c + 1))
+	if (*a != *(a + 1))
 		return (0);
-	else if (*c == 0)
+	else if (*a == 0)
 		return (1);
-	return (palind2(c + 1, x - 2));
+	return (palind3(a + 1, x - 2));
 }
 /**
  * is_palindrome - returns 1 if a string is palindrome else 0 if not
@@ -38,6 +38,6 @@ int is_palindrome(char *s)
 {
 	int x;
 
-	x = palind1(s, 0);
-	return (palind2(s, 1));
+	x = palind2(s, 0);
+	return (palind3(s, 1));
 }
