@@ -9,6 +9,6 @@ int sqrt2(int x, int y);
 int is_prime_number(int n);
 int prime2(int x, int y);
 int is_palindrome(char *s);
-int palind2(char *c, int x);
-int palind3(char *a, int x);
+int _strlen_recursion(char *s);
+int comparator(char *s, int n1, int n2);
 int wildcmp(char *s1, char *s2);
