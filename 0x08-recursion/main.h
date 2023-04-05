@@ -9,4 +9,6 @@ int sqrt2(int x, int y);
 int is_prime_number(int n);
 int prime2(int x, int y);
 int is_palindrome(char *s);
+int palind1(char *c, int x);
+int palind2(char *c, int x);
 int wildcmp(char *s1, char *s2);
