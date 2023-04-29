@@ -1,5 +1,5 @@
 section .data
-hello db "Hello, Holberton", 0
+hello db "Hello, Holberton", 0x0a ; null-terminated string for printf
 
 section .text
 global main
@@ -13,4 +13,4 @@ xor eax, eax ; clear EAX register to indicate no floating point arguments
 call printf ; call printf function
 xor eax, eax ; set return value to 0
 pop rbp ; tear down stack frame
-ret 
+ret ; return from function
