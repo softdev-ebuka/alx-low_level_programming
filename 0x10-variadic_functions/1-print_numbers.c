@@ -4,12 +4,13 @@
 
 /**
  * print_numbers - function that prints numbers
- * @seperator: string to be printed between num
- * @n: num of integers passed to the function
  *
- * Return: nothing
+ * @separator: string to be printed between numbers
+ * @n: number of integers passed to the function
+ *
+ * Return: void
  */
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int x;
 	va_list list;
@@ -18,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 	for (x = 0 ; x < n ; x++)
 	{
 		printf("%d", va_arg(list, int));
-		if (seperator && x < n - 1)
+		if (x < n - 1 && seperator != NULL)
 			printf("%s", seperator);
 	}
 	printf("\n");
