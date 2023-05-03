@@ -9,11 +9,11 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int x;
-
-	if (name == NULL || f == NULL)
-		return;
-
-	for (x = 0 ; name[x] != '\0' ; x++)
-		f(&name[x]);
+	if (name && f)
+	{
+		while (*name)
+		{
+			f(*name++);
+		}
+	}
 }
